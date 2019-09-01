@@ -1,0 +1,6 @@
+{
+	"dockerComposeFile": ".dev-compose.yml",
+	"service": "dev",
+	"workspaceFolder": "/app",
+	"extensions": ["ms-python.python"]
+}

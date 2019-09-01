@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  dev:
+    image: ichizero/${APP_NAME}-dev:latest
+    build:
+      context: ./
+      dockerfile: .dev.Dockerfile
+      target: dev
+    hostname: dev
+    env_file: .env
+    volumes:
+      - .:/app
+    tty: true

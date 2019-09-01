@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  app:
+    image: ichizero/${APP_NAME}:latest
+    build:
+      context: .
+      target: app
+    env_file: .env
