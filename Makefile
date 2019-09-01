@@ -2,7 +2,7 @@ APP_NAME=python-app
 
 .PHONY: attach
 attach:
-	docker-compose -f .dev-compose.yml exec dev /bin/zsh
+	docker-compose -f ./.devcontainer/docker-compose.dev.yml exec dev /bin/zsh
 
 .PHONY: build
 build:

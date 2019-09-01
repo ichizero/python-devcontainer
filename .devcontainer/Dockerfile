@@ -11,7 +11,7 @@ RUN apt update && \
 # RUN --mount=type=cache,target=/root/.cache/pip \
 #     --mount=type=bind,target=./ \
 RUN pip install --no-cache-dir autopep8 flake8
-COPY requirements.txt .
+COPY ./requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt && \
     rm requirements.txt
 

@@ -3,11 +3,11 @@ services:
   dev:
     image: ichizero/${APP_NAME}-dev:latest
     build:
-      context: ./
-      dockerfile: .dev.Dockerfile
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
       target: dev
     hostname: dev
-    env_file: .env
+    env_file: ../.env
     volumes:
-      - .:/app
+      - ../:/app
     tty: true
